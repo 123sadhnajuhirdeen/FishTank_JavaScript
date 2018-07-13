@@ -1,0 +1,281 @@
+body
+{
+	background-color: #604F46;
+	margin:0px;
+
+}
+
+#content
+{
+
+	width: 1000px;
+	height: 500px;
+	/*background-color: #cc0099;*/
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+
+
+}
+
+
+
+#fishTank{
+	position: absolute;
+	width: 1000px;
+	height: 500px;
+	border-style: solid;
+	border-width: 3px 20px 3px 20px;
+	border-color:  #252424;
+}
+
+
+/*.fish_tankImage
+{
+	
+}*/
+
+.fish
+{
+	position: absolute;
+
+}
+
+#fish1
+{
+	bottom: 20px;
+	left:40px;
+	width: 150px;
+	height: 125px;
+	x-transition: all 0.5s ease-in-out;
+    animation: ani 2.7s infinite;
+}
+
+@keyframes ani {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 700px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#fish2
+{
+	bottom: 20px;
+	left:500px;
+	width: 360px;
+	height: 300px;
+}
+
+#fish3
+{
+	bottom: 20px;
+	right:100px;
+	width: 150px;
+	height: 75px;
+}
+
+#fish4
+{
+	bottom: 200px;
+	right:100px;
+	width: 150px;
+	height: 150px;
+}
+
+#fish5
+{
+	bottom: 350px;
+	left:20px;
+}
+
+
+.leave {
+  position: absolute;
+  /*top: 30px;
+  left: 40px;*/
+  width: 150px;
+  height: 130px;
+}
+
+#leave1 {
+  
+  bottom: 140px;
+  right: 95px;
+
+  transform: rotate(40deg);
+  width: 150px;
+	height: 125px;
+	x-transition: all 0.5s ease-in-out;
+    animation: aniLeave 2.7s infinite;
+}
+
+
+
+@keyframes aniLeaves {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 150px;
+  }
+  100% {
+    left: 0;
+  }
+  50% {
+    bottom: 170px;
+  }
+}
+
+@keyframes aniLeave {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 50px;
+  }
+  100% {
+    right: 0;
+  }
+  50% {
+    bottom: 130px;
+  }
+
+ }
+
+.circle
+{
+			/*width: 20px;
+			height: 20px;
+			border-radius: 15px;*/
+			border: 1px solid #000;
+			position: absolute;
+			
+			/*bottom:250px;
+			left:200px;*/
+}
+
+#bubble1
+{
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	bottom:180px;
+	left:200px;
+}
+
+
+#bubble2
+{
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	bottom:150px;
+	left:210px;
+}
+
+
+#bubble3
+{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	bottom:110px;
+	left:200px;
+}
+
+#bubble4
+{
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	bottom:210px;
+	left:200px;
+}
+
+#bubble5
+{
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	bottom: 150px;
+  right: 150px;
+}
+
+
+#bubble6
+{
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	bottom: 110px;
+  right: 165px;
+}
+
+
+#bubble7
+{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	bottom: 100px;
+  right: 150px;
+}
+
+.rock
+{
+	position: absolute;
+
+}
+
+#rock1
+{
+	width: 300px;
+	height: 250px;
+	top:250px;
+	right:0px;
+}
+
+#rock2
+{
+	width: 300px;
+	height: 250px;
+	bottom:0px;
+	left:0px;
+}
+
+.cycle
+{
+	position: absolute;
+
+}
+
+#cycle1
+{
+	bottom: 80px;
+	left:700px;
+	width: 50px;
+	height: 50px;
+	
+}
+#cycle2
+{
+	bottom: 80px;
+	left:650px;
+	width: 50px;
+	height: 50px;
+	
+}
+
+#leave2
+{
+	bottom:120px;
+	left:610px;
+	transform: rotate(40deg);
+  width: 150px;
+	height: 125px;
+}

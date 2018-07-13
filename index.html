@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fish Tank Animation</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link src="https://github.com/visionmedia/move.js/blob/master/move.js">
+	<link rel="stylesheet" type="text/css" href="javascript/common.js">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	
+    
+    var fish1Posi=40;
+    var fish2Posi=40;
+    var fish3Posi=40;
+    var fish4Posi=40;
+    var fish5Posi=40;
+	function animateFish()
+	{
+
+
+		var fish3Element = document.getElementById("fish3");
+			fish3Element.style.marginRight = fish3Posi+"px";
+			fish3Posi = fish3Posi + 5;
+			
+			if(fish3Posi >= 400)
+			{
+				fish3Posi = 40;
+			}
+
+		var fish4Element = document.getElementById("fish4");
+			fish4Element.style.marginRight = fish4Posi+"px";
+			fish4Posi = fish4Posi + 5;
+
+			if(fish4Posi >= 700)
+			{
+				fish4Posi = 40;
+			}
+
+		var fish5Element = document.getElementById("fish5");
+			fish5Element.style.marginLeft = fish5Posi+"px";
+			fish5Posi = fish5Posi + 5;
+
+			if(fish5Posi >= 800)
+			{
+				fish5Posi = 40;
+			}
+
+
+		setTimeout("animateFish()",50);
+
+	}
+
+	</script>
+	
+	<script type="text/javascript">
+	var bubble1Posi = 5;
+     var bubble2Posi = 5;
+     var bubble3Posi = 5;
+     var bubble4Posi = 5;
+	function animateBubble1()
+	{
+
+		var circle = document.getElementById("bubble1");
+		
+		circle.style.marginBottom =  bubble1Posi+"px";
+		bubble1Posi = bubble1Posi+ 5;
+
+		
+		if (bubble1Posi >= 200) 
+		{
+			bubble1Posi = 0;
+		}
+
+		var circle2 = document.getElementById("bubble2");
+		
+		circle2.style.marginBottom =  bubble2Posi+"px";
+		bubble2Posi = bubble2Posi+ 5;
+
+		
+		if (bubble2Posi >= 200) 
+		{
+			bubble2Posi = 0;
+		}
+
+		var circle3 = document.getElementById("bubble3");
+		
+		circle3.style.marginBottom =  bubble3Posi+"px";
+		bubble3Posi = bubble3Posi+ 5;
+
+		
+		if (bubble3Posi >= 200) 
+		{
+			bubble3Posi = 0;
+		}
+
+		var circle4 = document.getElementById("bubble4");
+		
+		circle4.style.marginBottom =  bubble3Posi+"px";
+		bubble4Posi = bubble4Posi+ 5;
+
+		
+		if (bubble4Posi >= 200) 
+		{
+			bubble4Posi = 0;
+		}
+		setTimeout("animateBubble1()",60);
+	}
+
+	</script>
+	<script type="text/javascript">
+
+	var bubble1Posi = 5;
+     var bubble2Posi = 5;
+     var bubble3Posi = 5;
+		function animateBubble2()
+	{
+
+		var circle = document.getElementById("bubble5");
+		
+		circle.style.marginBottom =  bubble1Posi+"px";
+		bubble1Posi = bubble1Posi+ 5;
+
+		
+		if (bubble1Posi >= 400) 
+		{
+			bubble1Posi = 0;
+		}
+
+		var circle2 = document.getElementById("bubble6");
+		
+		circle2.style.marginBottom =  bubble2Posi+"px";
+		bubble2Posi = bubble2Posi+ 5;
+
+		
+		if (bubble2Posi >= 400) 
+		{
+			bubble2Posi = 0;
+		}
+
+		var circle3 = document.getElementById("bubble7");
+		
+		circle3.style.marginBottom =  bubble3Posi+"px";
+		bubble3Posi = bubble3Posi+ 5;
+
+		
+		if (bubble3Posi >= 400) 
+		{
+			bubble3Posi = 0;
+		}
+		setTimeout("animateBubble2()",100);
+
+	}
+	</script>
+	
+	<script>
+		function start(){
+		    animateFish();
+		    animateBubble1();
+		    animateBubble2();
+		}
+	</script>
+	<script type="text/javascript">
+		var looper;
+		var degrees = 40;
+
+		function rotateAnimation(element,speed)
+		{
+			var htmlElement = document.getElementById(element);
+			if (navigator.userAgent.match("Chrome")) 
+			{
+					htmlElement.style.WebkitTransform = "rotate("+degrees+"deg)";
+
+			}
+			else if (navigator.userAgent.match("Firefox")) 
+			{
+					htmlElement.style.MozTransform = "rotate("+degrees+"deg)";
+
+			}
+			else if (navigator.userAgent.match("MSIE")) 
+			{
+					htmlElement.style.msTransform = "rotate("+degrees+"deg)";
+
+			}
+
+			else if (navigator.userAgent.match("Opera")) 
+			{
+					htmlElement.style.transform = "rotate("+degrees+"deg)";
+
+			}
+
+			else 
+			{
+					htmlElement.style.WebkitTransform = "rotate("+degrees+"deg)";
+
+			}
+
+			looper = setTimeout('rotateAnimation(\''+element+'\','+speed+')',speed);
+			degrees++;
+
+			if(degrees > 85)
+			{
+				degrees  = 40;
+
+			}
+
+		}
+
+	</script>
+	<script type="text/javascript">
+		var looper;
+		var degrees = -40;
+
+		function rotateAnimation1(element,speed)
+		{
+			var htmlElement = document.getElementById(element);
+			if (navigator.userAgent.match("Chrome")) 
+			{
+					htmlElement.style.WebkitTransform = "rotate("+degrees+"deg)";
+
+			}
+			else if (navigator.userAgent.match("Firefox")) 
+			{
+					htmlElement.style.MozTransform = "rotate("+degrees+"deg)";
+
+			}
+			else if (navigator.userAgent.match("MSIE")) 
+			{
+					htmlElement.style.msTransform = "rotate("+degrees+"deg)";
+
+			}
+
+			else if (navigator.userAgent.match("Opera")) 
+			{
+					htmlElement.style.transform = "rotate("+degrees+"deg)";
+
+			}
+
+			else 
+			{
+					htmlElement.style.WebkitTransform = "rotate("+degrees+"deg)";
+
+			}
+
+			looper = setTimeout('rotateAnimation(\''+element+'\','+speed+')',speed);
+			degrees--;
+
+			if(degrees < -85)
+			{
+				degrees  = -40;
+
+			}
+
+		}
+
+	</script>
+	<script type="text/javascript">
+		var looper;
+		var degrees  =  5;
+		function bubbleAnimation(element,speed)
+		{
+			var htmlElement = document.getElementById(element);
+			
+			looper = setTimeout('bubbleAnimation(\''+element+'\','+speed+')',speed);
+			degrees = degrees+ 5;
+
+		
+		if (degrees >= 200) 
+		{
+			degrees = 0;
+		}
+
+		}
+	</script>
+	
+	
+</head>
+<body onload="start()">
+<div id="content">
+<!-- START CONTENT-->
+
+	
+	<img id="fishTank" src="images/fishTank.jpg"/>
+  
+  	<div id="bubble1" class="circle" onmouseover="animateFish()">
+	</div>
+	<div id="bubble2" class="circle" onmouseover="animateFish()">
+	</div>
+	<div id="bubble3" class="circle" onmouseover="animateFish()">
+	</div>
+	<div id="bubble4" class="circle" onmouseover="animateFish()">
+	</div>
+	<div id="bubble5" class="circle" onmouseover="animateFish()">
+	</div>
+	<div id="bubble6" class="circle" onmouseover="animateFish()">
+	</div>
+	<div id="bubble7" class="circle" onmouseover="animateFish()">
+	</div>
+  	<img id="leave1" class="leave" src="images/leave1.png">
+  	<img id="leave2" class="leave" src="images/leave1.png">
+
+    <img id="rock1" class="rock" src="images/rock1.png">
+	<img id="rock2" class="rock" src="images/rock2.png">
+	
+	<img id="cycle1" class="cycle" src="images/cycle.png">
+	<img id="cycle2" class="cycle" src="images/cycle.png">
+
+    <img  class="fish" id="fish1" src="images/fish1.gif" onclick="animateFish()">
+	<img  class="fish" id="fish2" src="images/fish2.gif">
+	<img  class="fish" id="fish3" src="images/fish3.gif">
+	<img  class="fish" id="fish4" src="images/fish4.png">
+	<img  class="fish" id="fish5" src="images/fish5.gif">
+		
+<!-- END CONTENT-->
+</div>
+		<script>
+			rotateAnimation("cycle1",40);
+			rotateAnimation1("cycle2",40);
+		</script>
+		
+
+	
+</body>
+</html>
